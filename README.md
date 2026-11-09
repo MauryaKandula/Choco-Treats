@@ -2,7 +2,12 @@
 
 > *"A Little Luxury in Every Bite"*
 
-A bespoke, mobile-first web application for **ChocoTreat**, a small-batch, home-based artisan chocolate boutique.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://mauryakandula.github.io/Choco-Treats/)
+[![Deploy Status](https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml/badge.svg)](https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml)
+
+A bespoke, mobile-first web boutique for **ChocoTreat**, a small-batch, home-based artisan chocolate boutique.
+
+🌐 **Live URL**: [https://mauryakandula.github.io/Choco-Treats/](https://mauryakandula.github.io/Choco-Treats/)
 
 ---
 
@@ -47,8 +52,12 @@ npm run preview
 
 ---
 
-## Deploying in Google AI Studio / Cloud Run
+## Deployments
 
-1. Verify compilation and lint checks pass cleanly (`npm run build`).
-2. Click the **Share** or **Deploy** button in the top-right corner of Google AI Studio to publish directly to Google Cloud Run.
-3. Optional: Use **Export to GitHub** in the AI Studio toolbar to push the repository to your GitHub account.
+### 1. GitHub Pages (Automated via Actions)
+This repository is configured with GitHub Actions (`.github/workflows/deploy.yml`). Pushing to `main` automatically triggers a build and publishes to:
+👉 **[https://mauryakandula.github.io/Choco-Treats/](https://mauryakandula.github.io/Choco-Treats/)**
+
+### 2. Google AI Studio / Cloud Run
+1. Verify compilation passes cleanly (`npm run build`).
+2. Click the **Share** or **Deploy** button in Google AI Studio to deploy directly to Google Cloud Run.
