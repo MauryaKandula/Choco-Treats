@@ -1,9 +1,18 @@
 # ChocoTreat — Handcrafted Artisan Chocolates
 
-> *"A Little Luxury in Every Bite"*
+<div align="center">
+  <img src="public/assets/aistudio/IMG-20261108-WA0050_bc5ac010.jpg" width="160" alt="ChocoTreat Vintage Seal Logo" />
+</div>
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://mauryakandula.github.io/Choco-Treats/)
-[![Deploy Status](https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml/badge.svg)](https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml)
+<p align="center">
+  <em>"A Little Luxury in Every Bite"</em>
+</p>
+
+<p align="center">
+  <a href="https://mauryakandula.github.io/Choco-Treats/"><img alt="Live Demo" src="https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white"></a>
+  &nbsp;
+  <a href="https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml"><img alt="Deploy Status" src="https://github.com/MauryaKandula/Choco-Treats/actions/workflows/deploy.yml/badge.svg"></a>
+</p>
 
 A bespoke, mobile-first web boutique for **ChocoTreat**, a small-batch, home-based artisan chocolate boutique.
 
