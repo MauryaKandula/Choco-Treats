@@ -1,14 +1,21 @@
 import { ChocolateProduct, BusinessConfig } from '../types/index.ts';
+import heroImg from '../assets/images/hero_artisan_chocolates_1794181599740.jpg';
+import nutsImg from '../assets/images/collection_nuts_chocolates_1794181600846.jpg';
+import coffeeImg from '../assets/images/collection_coffee_chocolate_1794181600322.jpg';
+import giftBoxImg from '../assets/images/gift_box_packaging_1794181601534.jpg';
+import logoWordmarkImg from '../assets/images/IMG-20261108-WA0049_2c66fa76.jpg';
+import logoSealImg from '../assets/images/IMG-20261108-WA0050_bc5ac010.jpg';
+import flavorsNotesImg from '../assets/images/image_4ddbd81e.png';
 
 // Product images generated and local references
 export const PRODUCT_IMAGES = {
-  hero: '/src/assets/images/hero_artisan_chocolates_1794181599740.jpg',
-  nuts: '/src/assets/images/collection_nuts_chocolates_1794181600846.jpg',
-  coffee: '/src/assets/images/collection_coffee_chocolate_1794181600322.jpg',
-  giftBox: '/src/assets/images/gift_box_packaging_1794181601534.jpg',
-  logoWordmarkRef: '/public/assets/aistudio/IMG-20261108-WA0049_2c66fa76.jpg',
-  logoSealRef: '/public/assets/aistudio/IMG-20261108-WA0050_bc5ac010.jpg',
-  flavorsNotesRef: '/public/assets/aistudio/image_4ddbd81e.png',
+  hero: heroImg,
+  nuts: nutsImg,
+  coffee: coffeeImg,
+  giftBox: giftBoxImg,
+  logoWordmarkRef: logoWordmarkImg,
+  logoSealRef: logoSealImg,
+  flavorsNotesRef: flavorsNotesImg,
 };
 
 export const INITIAL_PRODUCTS: ChocolateProduct[] = [

@@ -6,7 +6,7 @@ import {
   ActiveTab,
   CustomBoxOrder,
 } from '../types/index.ts';
-import { DEFAULT_BUSINESS_CONFIG, INITIAL_PRODUCTS } from '../data/chocolates.ts';
+import { DEFAULT_BUSINESS_CONFIG, INITIAL_PRODUCTS, PRODUCT_IMAGES } from '../data/chocolates.ts';
 
 interface AppContextType {
   activeTab: ActiveTab;
@@ -149,7 +149,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       category: 'gifts',
       shortDescription: `Bespoke gift box for ${boxOrder.occasion} with personalized ribbon & message`,
       detailedDescription: `Custom crafted assortment (${boxOrder.boxSize} pieces). Wrapper style: ${boxOrder.wrapperStyle}${mouldText}${recipeText}. Personalized message: "${boxOrder.customText}". Desired Date: ${boxOrder.desiredDate || 'Flexible'}.`,
-      image: '/src/assets/images/gift_box_packaging_1794181601534.jpg',
+      image: PRODUCT_IMAGES.giftBox,
       imageAlt: 'Customized luxury chocolate gift box',
       customerPrice: custPrice,
       bulkRetailPrice: bulkPrice,
