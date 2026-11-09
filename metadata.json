@@ -1,0 +1,6 @@
+{
+  "name": "ChocoTreat — Handcrafted Artisan Chocolates",
+  "description": "Bespoke handmade chocolates crafted with care. Discover artisanal milk, coffee, almond, pistachio, and cashew chocolates with personalized gifting and custom wrappers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

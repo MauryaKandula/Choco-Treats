@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-ivory: #F8EFE4;
+  --color-vanilla: #FDF8F2;
+  --color-milk: #7D4C35;
+  --color-cocoa: #4A2C1E;
+  --color-espresso: #331E15;
+  --color-caramel: #C99C76;
+  --color-rose: #D8BBB1;
+  --color-pistachio: #A7AE96;
+  --color-warm-beige: #EAD8C3;
+  --color-champagne: #D7BD96;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8EFE4;
+    background-image:
+      radial-gradient(at 15% 12%, rgba(201, 156, 118, 0.18) 0px, transparent 48%),
+      radial-gradient(at 85% 24%, rgba(216, 187, 177, 0.22) 0px, transparent 52%),
+      radial-gradient(at 50% 65%, rgba(136, 81, 55, 0.08) 0px, transparent 55%),
+      radial-gradient(at 20% 88%, rgba(215, 189, 150, 0.2) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #362016;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Soft painterly smudge accents for sections & cards */
+.smudge-blob-caramel {
+  background: radial-gradient(circle, rgba(201, 156, 118, 0.26) 0%, rgba(216, 187, 177, 0.12) 45%, transparent 72%);
+  filter: blur(42px);
+  pointer-events: none;
+}
+
+.smudge-blob-rose {
+  background: radial-gradient(circle, rgba(216, 187, 177, 0.3) 0%, rgba(233, 213, 189, 0.15) 50%, transparent 75%);
+  filter: blur(48px);
+  pointer-events: none;
+}
+
+.smudge-blob-cocoa {
+  background: radial-gradient(circle, rgba(136, 81, 55, 0.14) 0%, rgba(201, 156, 118, 0.08) 50%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.soft-surface-card {
+  background: linear-gradient(145deg, rgba(255, 249, 242, 0.88) 0%, rgba(250, 241, 230, 0.78) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(201, 156, 118, 0.24);
+  box-shadow: 0 10px 30px -10px rgba(74, 44, 30, 0.06), 0 2px 10px -2px rgba(136, 81, 55, 0.04);
+}
+
+/* Tasteful subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8EFE4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7BD96;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99C76;
+}
+
+/* Mobile smooth touch scrolling & utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #885137;
+  outline-offset: 2px;
+}
+
+/* Tactile feedback */
+.touch-press {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), opacity 180ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+.touch-press:active {
+  transform: scale(0.97);
+}
